@@ -52,28 +52,23 @@ footer {
 				padding: 8px;
 				font-size: 24px;
 				color: #707070;
-				width: 562px;
+				width: 502px;
 			}
 
 			.checkbox {
 				display: -webkit-flex; /* Safari */
 				display: flex;
 				-webkit-flex: 1;  /* Safari 6.1+ */
-	    	-ms-flex: 1;  /* IE 10 */    
+	    	-ms-flex: 1;  /* IE 10 */
 	    	flex: 1;
 				margin: 0;
 				padding: 0;
 				float: right;
 				width: 60px;
-				border-left: 1px solid #707070;
+				/*border-left: 1px solid #707070;*/
 				padding: 8px;
 
-
-
-				button {
-					-webkit-flex: 1;  /* Safari 6.1+ */
-	    		-ms-flex: 1;  /* IE 10 */    
-	    		flex: 1;
+				.checkbox-btn {
 					border: 0;
 					width: 100%;
 					background: image-url('checkbox.png');
@@ -81,13 +76,40 @@ footer {
 					background-repeat: no-repeat;
 				}
 
-				button:hover {
-					-webkit-flex: 1;  /* Safari 6.1+ */
-	    		-ms-flex: 1;  /* IE 10 */    
-	    		flex: 1;
+				.checkbox-btn:hover {
 					border: 0;
 					width: 100%;
 					background: image-url('checkbox_hover.png');
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+			}
+
+			.trashbin {
+				display: -webkit-flex; /* Safari */
+				display: flex;
+				-webkit-flex: 1;  /* Safari 6.1+ */
+	    	-ms-flex: 1;  /* IE 10 */
+	    	flex: 1;
+				margin: 0;
+				padding: 0;
+				float: right;
+				width: 60px;
+				/*border-left: 1px solid #707070;*/
+				padding: 8px;
+
+				.trashbin-btn {
+					border: 0;
+					width: 100%;
+					background: image-url('trashbin.png');
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+
+				.trashbin-btn:hover {
+					border: 0;
+					width: 100%;
+					background: image-url('trashbin_hover.png');
 					background-size: contain;
 					background-repeat: no-repeat;
 				}

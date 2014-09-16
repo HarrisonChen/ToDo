@@ -18,10 +18,16 @@
             <label ng-dblclick="edit(task)" ng-class="{complete: task.completed}">{{task.title}}</label>
             <div class="checkbox">
               <button
+                class="checkbox-btn"
                 ng-model="task.completed"
                 ng-click="toggleCheck(task)" />
+              
             </div>
-            <!-- <button class="btn btn-sm btn-danger" ng-click="delete(task)">x</button> -->
+            <div class="trashbin">
+              <button
+                class="trashbin-btn"
+                ng-click="delete(task)" />
+            </div>
           </div>
         </li>
       </ul>
