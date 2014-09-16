@@ -2,7 +2,7 @@ class Api::V1::TasksController < ApplicationController
   respond_to :json
 
   def index
-    respond_with(Task.all.order("completed ASC").order("id DESC"))
+    respond_with(Task.all.order("completed ASC").order("updated_at DESC").order("id DESC"))
   end
 
   def show
