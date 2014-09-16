@@ -1,5 +1,6 @@
 angular.module('controllers.taskCtrl', [])
-.controller('TaskCtrl', function($scope, $routeParams, Task){
+.controller('TaskCtrl', ['$scope', '$routeParams', 'Task',
+function($scope, $routeParams, Task){
 
   $scope.tasks = Task.query();
   initTask();
@@ -72,4 +73,4 @@ angular.module('controllers.taskCtrl', [])
     $scope.save(task);
   };
 
-});
+}]);
