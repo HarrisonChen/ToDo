@@ -17,7 +17,6 @@ angular.module('controllers.taskCtrl', [])
         if($scope.tasks[i].id == activeTask.id){
 
           Task.update(activeTask);
-          console.log('update');
           updated = true;
           break;
         }
@@ -38,9 +37,9 @@ angular.module('controllers.taskCtrl', [])
 
   $scope.delete = function(deletedTask){
     Task.delete(deletedTask);
-    initTask();
     var index = $scope.tasks.indexOf(deletedTask);
     $scope.tasks.splice(index, 1);
+    initTask();
   };
 
   $scope.toggleCheck = function(task){

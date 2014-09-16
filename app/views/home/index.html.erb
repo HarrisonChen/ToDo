@@ -1,0 +1,30 @@
+<div class="todo-list">
+  <div ng-controller="TaskCtrl">
+    <h1 class="title">ToDo</h1>
+  
+    <div class="input-todo" >
+      <form ng-submit="save(activeTask)">
+        <input
+          placeholder="I have to ..."
+          ng-model="activeTask.title"
+          autofocus />
+      </form>
+    </div>
+
+    <div ng-show="tasks.length" class="task-list" ng-cloak>
+      <ul>
+        <li ng-repeat="task in tasks">
+          <div class="task-entry">
+            <label ng-dblclick="edit(task)" ng-class="{complete: task.completed}">{{task.title}}</label>
+            <div class="checkbox">
+              <button
+                ng-model="task.completed"
+                ng-click="toggleCheck(task)" />
+            </div>
+            <!-- <button class="btn btn-sm btn-danger" ng-click="delete(task)">x</button> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
