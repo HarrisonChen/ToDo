@@ -56,8 +56,8 @@ function($scope, $routeParams, Task){
 
   $scope.edit = function(editedTask){
     $scope.activeTask = editedTask;
-    popOut(activeTask);
-    pushFront(activeTask);
+    popOut($scope.activeTask);
+    pushFront($scope.activeTask);
     $scope.activeTask.completed = false;
   };
 
