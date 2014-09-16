@@ -69,10 +69,7 @@ angular.module('controllers.taskCtrl', [])
 
   $scope.toggleCheck = function(task){
     task.completed = !task.completed;
-    
     $scope.save(task);
-
-    
   };
 
 });
