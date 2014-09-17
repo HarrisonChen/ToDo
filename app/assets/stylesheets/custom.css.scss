@@ -46,6 +46,9 @@ footer {
 		.task-entry {
 			display: -webkit-flex; /* Safari */
 			display: flex;
+			transition-property: opacity;
+			transition-duration: .25s;
+			transition-delay: 0s;
 
 			label {
 				margin: 0;
@@ -53,6 +56,9 @@ footer {
 				font-size: 24px;
 				color: #707070;
 				width: 502px;
+				transition-property: font-size;
+				transition-duration: .25s;
+				transition-delay: 0s;
 			}
 
 			.checkbox {
@@ -113,6 +119,12 @@ footer {
 					background-size: contain;
 					background-repeat: no-repeat;
 				}
+			}
+		}
+
+		.task-entry:hover {
+			label {
+				font-size: 32px !important;
 			}
 		}
 	}

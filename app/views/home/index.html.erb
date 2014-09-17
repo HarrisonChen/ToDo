@@ -15,13 +15,15 @@
       <ul>
         <li ng-repeat="task in tasks">
           <div class="task-entry">
-            <label ng-dblclick="edit(task)" ng-class="{complete: task.completed}">{{task.title}}</label>
+            <label ng-dblclick="edit(task)"
+                   ng-class="{complete: task.completed}">
+              {{task.title}}
+            </label>
             <div class="checkbox">
               <button
                 class="checkbox-btn"
                 ng-model="task.completed"
                 ng-click="toggleCheck(task)" />
-              
             </div>
             <div class="trashbin">
               <button

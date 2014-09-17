@@ -1,6 +1,7 @@
 angular.module('app', [
   'ngRoute',
   'ngResource',
+  'ngAnimate',
   'controllers.taskCtrl',
   'models.task'
 ])
